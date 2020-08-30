@@ -42,8 +42,9 @@ def win_notifier(temperature):
 
     # CAUTION: Hard coded city name
     toaster = ToastNotifier()
-    toaster.show_toast("Sorocaba", temperature + time.strftime(" - %H:%M"), threaded=True,
-    icon_path='weather.ico', duration=5)
+    toaster.show_toast("Sorocaba",
+        temperature + time.strftime(" - %H:%M"),
+        threaded=True, icon_path='weather.ico', duration=5)
 
 
 # Notifies every 15 minutes (900 seconds)
