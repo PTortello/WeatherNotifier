@@ -5,7 +5,6 @@ Temperature and time Win10 notifier
 """
 
 # TODO:
-#     - location selector
 #     - user settings (interval, duration, forecast)
 #     - forecast info
 #     - icon change by climate
@@ -17,11 +16,11 @@ from requests import get
 import time
 
 
-def temperature_scraper():
+def temperature_scraper(cityName):
     """Returns location current temperature"""
 
-    # CAUTION: Hard coded file name containing url address
-    source = "sorocaba.dat"
+    # Opens .DAT file containing address
+    source = cityName + ".dat"
     with open(source, 'r') as data:
         address = data.read()
 
@@ -37,19 +36,20 @@ def temperature_scraper():
     return match + '\xb0C'
 
 
-def win_notifier(temperature):
+def win_notifier(cityName, temperature):
     """Shows notification with current temperature and time"""
 
-    # CAUTION: Hard coded city name
     toaster = ToastNotifier()
-    toaster.show_toast("Sorocaba",
+    toaster.show_toast(cityName.capitalize(),
         temperature + time.strftime(" - %H:%M"),
         threaded=True, icon_path='weather.ico', duration=5)
 
 
+cityName = input("Location name: ").lower()
+
 # Notifies every 15 minutes (900 seconds)
 interval = 900
 while True:
-    temperature = temperature_scraper()
-    win_notifier(temperature)
+    temperature = temperature_scraper(cityName)
+    win_notifier(cityName, temperature)
     time.sleep(interval)
