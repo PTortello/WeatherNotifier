@@ -45,10 +45,13 @@ def win_notifier(cityName, temperature):
         threaded=True, icon_path='weather.ico', duration=5)
 
 
+# User input
 cityName = input("Location name: ").lower()
+interval = int(input("Time interval between alerts [minutes]: ")) * 60
+print("Running...")
 
 # Notifies every 15 minutes (900 seconds)
-interval = 900
+# interval = 900
 while True:
     temperature = temperature_scraper(cityName)
     win_notifier(cityName, temperature)
