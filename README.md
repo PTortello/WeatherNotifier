@@ -6,7 +6,7 @@ This application reports current temperature for the choosen location through Wi
 #### Objective
 The main purpose of this project is to improve my Python skills.
 
-As a side effect I am learning some new libraries, as bs4, win10toast and requests.
+I have learned some new libraries, as bs4, win10toast and requests.
 
 
 #### Features
