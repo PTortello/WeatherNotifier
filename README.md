@@ -5,13 +5,16 @@ This application reports current temperature for the choosen location through Wi
 
 #### Objective
 The main purpose of this project is to improve my Python skills.
+
 As a side effect I am learning some new libraries, as bs4, win10toast and requests.
 
 
 #### Features
 The only location avaiable for now is my hometown Sorocaba (São Paulo/Brazil).
+
 The interval of time between the reports are selected by the user.
-<img src="example.png" alt="image" width="250"/>
+
+<img src="example.png" alt="image"/>
 
 
 #### TO-DO List
