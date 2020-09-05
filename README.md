@@ -10,9 +10,9 @@ I have learned some new libraries, as bs4, win10toast and requests.
 
 
 #### Features
-The only location avaiable for now is my hometown Sorocaba (São Paulo/Brazil).
-
 The interval of time between the reports are selected by the user.
+
+The only location avaiable for now is my hometown Sorocaba (São Paulo/Brazil).
 
 <img src="example.png" alt="image"/>
 
