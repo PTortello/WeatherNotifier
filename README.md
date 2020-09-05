@@ -18,6 +18,6 @@ The only location avaiable for now is my hometown Sorocaba (São Paulo/Brazil).
 
 
 #### TO-DO List
-- user settings (duration, forecast)
+- user settings
 - forecast info
 - icon change by climate
