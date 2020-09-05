@@ -2,6 +2,8 @@
 ## Wheater Notifier
 This application reports current temperature for the choosen location through Windows 10 notifications.
 
+<img src="example.png" alt="image"/>
+
 
 #### Objective
 The main purpose of this project is to improve my Python skills.
@@ -13,8 +15,6 @@ I have learned some new libraries, as bs4, win10toast and requests.
 The interval of time between the reports are selected by the user.
 
 The only location avaiable for now is my hometown Sorocaba (São Paulo/Brazil).
-
-<img src="example.png" alt="image"/>
 
 
 #### TO-DO List
