@@ -21,3 +21,4 @@ The only location avaiable for now is my hometown Sorocaba (São Paulo/Brazil).
 - user settings
 - forecast info
 - icon change by climate
+- fix compound names bug
